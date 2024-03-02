@@ -10,3 +10,4 @@ U can suggest stuff 2 btw, this is an open source bot in the end
 -2017 x64 cpu(due to instructions and etc. it may work on older cpus but i it doesnt, i cant fix it and its not my problem, this requirement should change later)
 -visual studio
 -DSharp plus
+-.Net 8.0.2
