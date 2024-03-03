@@ -11,3 +11,5 @@ dont forget to report bugs here on github
 -DSharp plus 4.4.6
 -.Net 8.0.2
 -Windows Operating System
+
+# ANYTHING PROPERTARY (LIKE TOKENS) SHOULD BE IMPLEMENED BY YOURSELF
