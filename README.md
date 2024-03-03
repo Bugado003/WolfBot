@@ -1,16 +1,13 @@
 # WolfBot
-A discord bot for gaming server
-the description will also change later okay? im not very creative
+Bot pra servidor do discord Lunarium Wolfs
 
-This bot is intended to make your server active and funny, pls suggest stuff
+não vo encher d blábláblá por que esse repositório é privado
 
-**PLS NOTE**
-This bot is meant to be used on only ONE server, u can modify its code to use on ur server
-suggest stuff 2, this is an open source bot in the end
+caso tenha bugs reporte aqui no github e sugira coisas por favor:)
 
-**Requirements**
--2018 or newer x64 cpu(due to instructions and etc. it may work on older cpus but if it doesnt, its not my problem, this requirement should change later)
+**Requisitos**
+-processador x64 de 2018 ou mais recente(por causa de instruções e etc esse código pode não funcionar em processadores antigos, não é problema meu se voçê tentar mexer no código ignorando esse requisito)
 -Visual studio
 -DSharp plus 4.4.6
 -.Net 8.0.2
--Windows OS
+-Sistema Operacional Windows
