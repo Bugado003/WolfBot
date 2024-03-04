@@ -12,5 +12,5 @@ dont forget to report bugs here on github
 -.Net 8.0.2
 -Windows Operating System
 
-# ANYTHING PROPERTARY (LIKE TOKENS) SHOULD BE IN "CONFIG.JSON" FILE
+# ANYTHING PROPERTARY (LIKE TOKENS) SHOULD BE IN THE "CONFIG.JSON" FILE
 after compiling the code u should move the config.json file with your data to the same folder the .exe is in
