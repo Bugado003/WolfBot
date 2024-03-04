@@ -13,3 +13,4 @@ dont forget to report bugs here on github
 -Windows Operating System
 
 # ANYTHING PROPERTARY (LIKE TOKENS) SHOULD BE IN "CONFIG.JSON" FILE
+after compiling the code u should move the config.json file with your data to the same folder the .exe is in
