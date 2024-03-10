@@ -1,6 +1,8 @@
 ﻿//Bot Startup
 using DSharpPlus;
+using DSharpPlus.SlashCommands;
 using LunariumWolf.JSONs;
+using LunariumWolf.Source.Commands;
 using System;
 //Create class "Bot"
 internal class Bot
@@ -29,6 +31,10 @@ internal class Bot
         //Keep the bot Online forever (as long as the program is running)
         await Client.ConnectAsync();
         await Task.Delay(-1);
+
+        //Set up slash commands
+        var slashConfig = Client.UseSlashCommands();
+        slashConfig.RegisterCommands<BasicSlash>();
         }
     private static Task Client_Ready(object sender, EventArgs e)
     {
