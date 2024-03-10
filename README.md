@@ -16,5 +16,5 @@ dont forget to report bugs here on github
 after compiling the code u should move the config.json file with your data to the same folder the .exe is in
 
 also, this bot is not meant to be used with databases, it is made to people who cant afford a server to run the bot and work with databases
-
+(Bot still in early development okay?)
 Enjoy :D
