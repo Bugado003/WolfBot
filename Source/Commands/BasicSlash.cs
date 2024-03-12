@@ -20,10 +20,10 @@ namespace LunariumWolf.Source.Commands
             //Try to send the file
             try
             {
-                ctx.Channel.SendMessageAsync(jsonReader.download);
+               await ctx.Channel.SendMessageAsync(jsonReader.download);
             } catch(Exception E) //If not able to
             {
-                ctx.Channel.SendMessageAsync("Ops, something went wrong");
+               await ctx.Channel.SendMessageAsync("Ops, something went wrong");
             }
         }
     }
