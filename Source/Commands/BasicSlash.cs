@@ -18,13 +18,14 @@ namespace LunariumWolf.Source.Commands
             var jsonReader = new JsonReader();
             jsonReader.Read();
             //Try to send the file
-            try
-            {
-               await ctx.Channel.SendMessageAsync(jsonReader.download);
-            } catch(Exception E) //If not able to
-            {
-               await ctx.Channel.SendMessageAsync("Ops, something went wrong");
-            }
+                if (jsonReader.download != "download")
+                {
+                    await ctx.Channel.SendMessageAsync(jsonReader.download);
+                }
+                else //if cant get the Download link
+                {
+                    await ctx.Channel.SendMessageAsync("Oops, could not get the Download link");
+                }
         }
     }
 }

@@ -19,19 +19,40 @@ namespace LunariumWolf.JSONs
             //Use StreamReader to Read the Json
            using (StreamReader sr = new StreamReader("config.json"))
             {
-                //raw json
-                string json = await sr.ReadToEndAsync();
-                //JsonSerializerOptions
-                var options = new JsonSerializerOptions
+                //try to extract the data
+                try
                 {
-                    TypeInfoResolver = new DefaultJsonTypeInfoResolver()
-                };
+                    //raw json
+                    string json = await sr.ReadToEndAsync();
 
-                //Extracted data
-                JsonStructure data = JsonSerializer.Deserialize<JsonStructure>(json, options);
-                //Set values
-                this.token = data.token;
-                this.download = data.download;
+                    //Extracted data
+                    JsonStructure data = JsonSerializer.Deserialize<JsonStructure>(json);
+                    //Set values
+                    this.token = data.token;
+                    this.download = data.download;
+                }
+                catch (Exception E) //if not able to, Check what went wrong
+                {
+                    //Check if config.json exists
+                    if (File.Exists(@"config.json") == false)
+                    {
+                        //then tell the user and wait until the error is fixed
+                        Console.WriteLine("config.json file is missing");
+                        while(File.Exists(@"config.json") == false)
+                        {
+                            //Continue the loop until the error is fixed
+                        }
+                    }
+                    else //if some data is missing
+                    {
+                        Console.WriteLine("Something is missing in the config.json File");
+                        while(E != null)
+                        {
+                            //Wait for the data that's missing
+                        }
+                    }
+                    Read();
+                }
             }
         }
     }
