@@ -13,7 +13,7 @@ namespace LunariumWolf.JSONs
     {
         //Data that need to be extracted
         public string token { get; set; }
-
+        public string download { get; set; }
         public async Task Read()
         {
             //Use StreamReader to Read the Json
@@ -31,6 +31,7 @@ namespace LunariumWolf.JSONs
                 JsonStructure data = JsonSerializer.Deserialize<JsonStructure>(json, options);
                 //Set values
                 this.token = data.token;
+                this.download = data.download;
             }
         }
     }
@@ -38,5 +39,6 @@ namespace LunariumWolf.JSONs
     {
         //What is present in the Json
         public string token { get; set; }
+        public string download { get; set; }
     }
 }
