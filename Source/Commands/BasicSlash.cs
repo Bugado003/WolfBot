@@ -1,4 +1,4 @@
-﻿//Basically a "list" with all the slash commands
+﻿//Basically a "list" with all the basic slash commands
 using DSharpPlus.SlashCommands;
 using LunariumWolf.JSONs;
 using System;
