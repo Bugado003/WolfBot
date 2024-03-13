@@ -6,7 +6,7 @@ this bot is meant to make ur server funny and active, pls suggest stuff, this is
 dont forget to report bugs here on github
 
 **Requirements**
-- x64 processor from 2018 or newer (due to instructions, etc., this code may not work on older processors, it's not my problem if you try to change the code ignoring this requirement)
+- x64 processor from 2018 or newer (due to instructions, this code may not work on older processors)
 -Visual studio
 -DSharp plus 4.4.6
 -.Net 8.0.3
