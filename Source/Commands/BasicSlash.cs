@@ -12,20 +12,10 @@ namespace LunariumWolf.Source.Commands
     internal class BasicSlash : ApplicationCommandModule
     {
         //Download command
-        [SlashCommand("Get Download", "Someone's pc has to execute its commands")]
-        public async Task Download(InteractionContext ctx)
+        [SlashCommand("ReactionRoleSetup", "I could just use carl-bot instead of this....")]
+        public async Task ReactionRoleSetup(InteractionContext ctx)
         {
-            var jsonReader = new JsonReader();
-            jsonReader.Read();
-            //Try to send the file
-                if (jsonReader.download != "download")
-                {
-                    await ctx.Channel.SendMessageAsync(jsonReader.download);
-                }
-                else //if cant get the Download link
-                {
-                    await ctx.Channel.SendMessageAsync("Oops, could not get the Download link");
-                }
+
         }
     }
 }
