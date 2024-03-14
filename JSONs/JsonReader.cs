@@ -21,11 +21,8 @@ namespace LunariumWolf.JSONs
                 //raw json
                 string json = await sr.ReadToEndAsync();
                 //A bugfix
-                JsonSerializerOptions options = new JsonSerializerOptions
-                {
-                    IncludeFields = true
-                };
-
+                JsonSerializerOptions options = new JsonSerializerOptions();
+                options.TypeInfoResolver = new DefaultJsonTypeInfoResolver();
                 //Extracted data
                 JsonStructure data = JsonSerializer.Deserialize<JsonStructure>(json, options);
                 //Set values
