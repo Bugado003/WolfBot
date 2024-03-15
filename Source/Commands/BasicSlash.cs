@@ -11,7 +11,7 @@ namespace LunariumWolf.Source.Commands
 {
     internal class BasicSlash : ApplicationCommandModule
     {
-        //Download command
+        //That one Carl-bot command command
         [SlashCommand("ReactionRoleSetup", "I could just use carl-bot instead of this....")]
         public async Task ReactionRoleSetup(InteractionContext ctx)
         {
