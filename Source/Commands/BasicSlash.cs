@@ -1,4 +1,6 @@
 ﻿//Basically a "list" with all the basic slash commands
+using DSharpPlus;
+using DSharpPlus.Entities;
 using DSharpPlus.SlashCommands;
 using LunariumWolf.JSONs;
 using System;
@@ -15,7 +17,9 @@ namespace LunariumWolf.Source.Commands
         [SlashCommand("ReactionRoleSetup", "I could just use carl-bot instead of this....")]
         public async Task ReactionRoleSetup(InteractionContext ctx)
         {
-
+            var member = ctx.Member;
+            await ctx.Interaction.CreateResponseAsync(InteractionResponseType.ChannelMessageWithSource, new DiscordInteractionResponseBuilder().WithContent($"Hello {member}, why dont ya choose a channel for the reactionRole thing?"));
+            
         }
     }
 }
